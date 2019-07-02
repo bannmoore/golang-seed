@@ -12,6 +12,9 @@ lint: bin/golint
 test:
 	cd src && go test ./...
 
+benchmark:
+	cd src && go test ./... -run="^(Benchmark)" -bench=.
+
 watch:
 	rg --files | entr -rc sh -c "make format && make bin/sandbox && make test && make lint"
 
