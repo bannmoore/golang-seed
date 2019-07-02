@@ -29,3 +29,9 @@ Run format, lint, and test on changes (requires `ripgrep` and `entr`):
 ```sh
 make watch
 ```
+
+Re-create module / `go.mod`:
+
+```
+go mod init
+```

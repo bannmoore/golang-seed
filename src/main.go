@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/bannmoore/golang-seed/src/hello"
+)
 
 func main() {
-	fmt.Println("It does a thing!")
+	fmt.Println(hello.Hello())
 }
